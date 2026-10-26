@@ -1,0 +1,31 @@
+{
+  "name": "raphie-developer-challenge",
+  "version": "1.0.0",
+  "description": "CLI that generates constraint-checked cold outreach emails for Raphie using OpenAI and a go-to-market helper endpoint",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "raphie": "src/index.js"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test test/*.test.js",
+    "mock": "node scripts/mock-server.js",
+    "demo:offline": "node scripts/demo-offline.js",
+    "demo": "node src/index.js --name \"Jane Doe\" --company \"Riverline Sportsbook\" --description \"A sportsbook operator with high withdrawal volume, KYC questions, promo eligibility disputes, and periodic support spikes on big game days\" --tone direct"
+  },
+  "keywords": [
+    "cli",
+    "openai",
+    "cold-outreach",
+    "igaming"
+  ],
+  "author": "George Park",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^5.23.2"
+  }
+}
