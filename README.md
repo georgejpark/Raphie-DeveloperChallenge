@@ -2,7 +2,7 @@
 
 A Node.js command-line tool that writes cold outreach emails from Raphie to companies in the iGaming and sports betting ecosystem. It asks for the recipient, company, a short description and a tone, enriches that with the go-to-market helper endpoint, drafts the email with the OpenAI API, and then **proves** the result follows Raphie's "must not feel AI-generated" rules before printing it.
 
-Submitted by George Park for @agould65.
+Submitted by George Park for @agould65. A PDF version of this documentation with flow diagrams is in [`docs/Raphie_Challenge_Technical_Documentation.pdf`](docs/Raphie_Challenge_Technical_Documentation.pdf).
 
 ```
 $ npm start
